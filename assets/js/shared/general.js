@@ -35,7 +35,7 @@ function elementIsVisible(element) {
   }
 }
 
-function wordSplitter(el, delay) {
+function wordSplitter(el, delayS) {
   el.forEach((line) => {
     let word = line.querySelector(".text-splitter");
     let charArray = word.textContent.split("");
@@ -43,33 +43,33 @@ function wordSplitter(el, delay) {
     charArray.forEach((char) => {
       let charEl = document.createElement("div");
       charEl.classList.add("anim-char");
-      charEl.style.transitionDelay = `${delay}s`;
+      charEl.style.transitionDelay = `${delayS}s`;
       charEl.style.display = "inline-block";
       charEl.textContent = char;
       word.appendChild(charEl);
-      delay += 0.04;
+      delayS += 0.04;
     });
     word.classList.add("text-splitter--splitted");
-    delay -= 0.05;
+    delayS -= 0.05;
   });
 }
 
-function textSplitter(el, delay) {
+function textSplitter(el, delayS) {
   el.forEach((line) => {
     let words = line.querySelectorAll(".text-splitter");
     for (let i = 0; i < words.length; i++) {
-      delay = 0.15 * i;
+      delayS = 0.15 * i;
       let word = words[i];
       let charArray = word.textContent.split("");
       word.innerHTML = "";
       charArray.forEach((char) => {
         let charEl = document.createElement("div");
         charEl.classList.add("anim-char");
-        charEl.style.transitionDelay = `${delay}s`;
+        charEl.style.transitionDelay = `${delayS}s`;
         charEl.style.display = "inline-block";
         charEl.innerHTML = char !== " " ? char : "&nbsp;";
         word.appendChild(charEl);
-        delay += 0.04;
+        delayS += 0.04;
       });
       word.classList.add("text-splitter--splitted");
     }

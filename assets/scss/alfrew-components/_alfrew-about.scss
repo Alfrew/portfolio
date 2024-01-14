@@ -1,0 +1,122 @@
+.about {
+  position: relative;
+  z-index: 20;
+  padding: 10rem 0;
+  color: $light-color;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -16.333%;
+    right: -16.333%;
+    background-color: $accent-color;
+  }
+
+  .about__close {
+    position: fixed;
+    right: 16.666667%;
+    top: 35px;
+    display: none;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .about__content {
+    position: relative;
+    z-index: 1;
+
+    h2 {
+      font-size: 4.8rem;
+      line-height: 1;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.8rem;
+      line-height: 1.5;
+    }
+
+    .overflow {
+      &:first-child {
+        margin-bottom: 5rem;
+      }
+      &:not(:last-child) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
+
+@include for-size("lg") {
+  .about {
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 16.66667%;
+    opacity: 0;
+    pointer-events: none;
+    &::before {
+      display: none;
+    }
+    &[data-open="true"] {
+      opacity: 1;
+      pointer-events: all;
+
+      .about__close {
+        pointer-events: all;
+        .overflow .text-splitter * {
+          opacity: 1;
+          transform: translateY(0);
+          transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+      }
+      .about__content {
+        .overflow {
+          * {
+            transform: translateY(0);
+            transition: transform 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          }
+          &:nth-child(1) * {
+            transition-delay: 0.2s;
+          }
+          &:nth-child(2) * {
+            transition-delay: 0.25s;
+          }
+          &:nth-child(3) * {
+            transition-delay: 0.3s;
+          }
+          &:nth-child(4) * {
+            transition-delay: 0.35s;
+          }
+          &:nth-child(5) * {
+            transition-delay: 0.4s;
+          }
+        }
+      }
+    }
+
+    .about__close {
+      display: block;
+      pointer-events: none;
+      .overflow .text-splitter * {
+        transform: translateY(-100%);
+      }
+    }
+    .about__content {
+      .overflow * {
+        transform: translateY(100%);
+      }
+    }
+  }
+}

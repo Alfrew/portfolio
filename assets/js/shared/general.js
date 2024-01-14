@@ -1,6 +1,7 @@
 const IMG_LIST = document.querySelectorAll("img");
 const VIDEO_LIST = document.querySelectorAll("video");
 const PARALLAX_ASSET_LIST = document.querySelectorAll(".parallax-asset");
+const canHover = window.matchMedia("(hover: hover)").matches;
 let transitionEnd = whichTransitionEvent();
 
 IMG_LIST.forEach((img) => {
@@ -11,7 +12,7 @@ VIDEO_LIST.forEach((video) => {
 });
 setTimeout(() => {
   PARALLAX_ASSET_LIST.forEach((el) => {
-    el.classList.add("is-visible");
+    elementIsVisible(el);
   });
 }, 1500);
 PARALLAX_ASSET_LIST.forEach((el) => {
@@ -28,7 +29,7 @@ function elementIsVisible(element) {
   const boxLeft = element.getBoundingClientRect().left;
 
   if (boxTop < triggerBottom && boxLeft < triggerRight) {
-    element.classList.add("is-visible");
+    element.setAttribute("data-isVisible", true);
     window.removeEventListener("scroll", () => {
       elementIsVisible(element);
     });

@@ -1,0 +1,113 @@
+.projects {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  .projects__list {
+    padding-block: 16.5rem 10rem;
+  }
+  .projects__list-item {
+    opacity: 0;
+    transform: translate(-20px, 10px) scale(0.9) rotateX(50deg);
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+    &[data-isVisible="true"] {
+      transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+      opacity: 1;
+      transform: translate(0, 0) scale(1) rotateX(0);
+    }
+  }
+  .projects__link-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .projects__link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: $dark-color;
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .projects__stack {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    pointer-events: none;
+
+    img {
+      height: 3rem;
+      width: auto;
+      margin-top: 1.5rem;
+      filter: grayscale(100%);
+    }
+  }
+  .projects__link-description {
+    position: relative;
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 1.4;
+  }
+}
+
+@include for-size("lg") {
+  .projects {
+    .projects__list {
+      padding-block: 25rem 20rem;
+    }
+    .projects__list-item {
+      @include hover() {
+        .projects__link-description {
+          transform: translateY(0);
+          transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .projects__stack {
+          * {
+            opacity: 1;
+            transform: translateY(0);
+          }
+          @for $i from 1 to 5 {
+            :nth-child(#{$i}) {
+              transition-delay: #{$i * 0.1}s;
+            }
+          }
+        }
+      }
+    }
+    .projects__link-wrapper {
+      display: inline-flex;
+      flex-direction: row;
+    }
+    .projects__link {
+      font-size: 5rem;
+    }
+    .projects__stack {
+      height: 5.5rem;
+      flex-wrap: nowrap;
+      align-items: center;
+      position: absolute;
+      left: calc(100% + 4rem);
+      top: 0;
+      margin-bottom: 0;
+      @include hasHover() {
+        * {
+          margin-top: 0;
+          opacity: 0;
+          -ms-transform: translateY(2rem);
+          transform: translateY(2rem);
+          transition: opacity 0.3s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+      }
+    }
+    .projects__link-description {
+      font-size: 2.4rem;
+      @include hasHover() {
+        transform: translateY(100%);
+        transition: transform 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+      }
+    }
+  }
+}

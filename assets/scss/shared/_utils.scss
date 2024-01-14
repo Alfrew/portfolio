@@ -17,6 +17,9 @@ body.modal-open {
 .hidden {
   opacity: 0 !important;
 }
+.overflow {
+  overflow: hidden !important;
+}
 
 .bg-light {
   background-color: $bg-light-color;

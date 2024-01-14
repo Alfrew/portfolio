@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 12;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-light-color;
+  box-shadow: 0 2rem 3rem 3rem $bg-light-color;
+  padding: 3.5rem 8.33333% 0;
+
+  .header__title-container {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 0 0 0.8rem;
+    }
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 400;
+      letter-spacing: 0.03rem;
+      margin: 0;
+    }
+  }
+  .header__about {
+    position: relative;
+    display: none;
+    font-size: 2rem;
+    font-weight: 700;
+    * {
+      cursor: pointer;
+    }
+  }
+}
+
+@include for-size("lg") {
+  .header {
+    padding: 3.5rem 16.666% 0;
+
+    .header__about {
+      display: block;
+    }
+  }
+}

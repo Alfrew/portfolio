@@ -435,6 +435,10 @@ body.modal-open {
   box-shadow: 0 2rem 3rem 3rem #e1e6ea;
   padding: 3.5rem 8.33333% 0;
 }
+.header .header__title-container {
+  opacity: 0;
+  transition: opacity 2s;
+}
 .header .header__title-container h1 {
   font-size: 2.5rem;
   font-weight: 700;
@@ -451,9 +455,15 @@ body.modal-open {
   display: none;
   font-size: 2rem;
   font-weight: 700;
+  opacity: 0;
+  transition: opacity 2s;
 }
 .header .header__about * {
   cursor: pointer;
+}
+.header[data-isVisible=true] .header__title-container,
+.header[data-isVisible=true] .header__about {
+  opacity: 1;
 }
 
 @media screen and (min-width: 992px) {

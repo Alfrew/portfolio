@@ -1,12 +1,6 @@
 @import "shared/all-shared";
 @import "alfrew-components/all-alfrew";
-main {
-  margin-inline: 8.333%;
 
-  @include for-size("lg") {
-    margin-inline: 16.666%;
-  }
-}
 body {
   background-color: $bg-light-color;
 }

@@ -3,6 +3,8 @@
   z-index: 20;
   padding: 10rem 0;
   color: $light-color;
+  padding-inline: 8.333%;
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -16,7 +18,7 @@
 
   .about__close {
     position: fixed;
-    right: 16.666667%;
+    right: 16.666%;
     top: 35px;
     display: none;
     font-size: 2rem;
@@ -50,6 +52,14 @@
       }
     }
   }
+
+  .logo {
+    background-color: $extra-color;
+    translate: 0% 0%;
+    position: absolute;
+    top: 20px;
+    z-index: 0;
+  }
 }
 
 @include for-size("lg") {
@@ -63,7 +73,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 16.66667%;
+    padding: 0 16.666%;
     opacity: 0;
     pointer-events: none;
     &::before {
@@ -117,6 +127,9 @@
       .overflow * {
         transform: translateY(100%);
       }
+    }
+    .logo {
+      display: none;
     }
   }
 }

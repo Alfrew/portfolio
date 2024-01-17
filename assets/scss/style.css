@@ -428,7 +428,7 @@ body.modal-open {
   justify-content: space-between;
   background-color: #e1e6ea;
   box-shadow: 0 2rem 3rem 3rem #e1e6ea;
-  padding: 3.5rem 8.33333% 0;
+  padding: 3.5rem 8.333% 0;
 }
 .header .header__title-container {
   opacity: 0;
@@ -473,6 +473,7 @@ body.modal-open {
   position: relative;
   z-index: 10;
   min-height: 100lvh;
+  padding-inline: 8.333%;
 }
 .projects .projects__list {
   padding-block: 16.5rem 10rem;
@@ -633,6 +634,9 @@ body.modal-open {
 }
 
 @media screen and (min-width: 992px) {
+  .projects {
+    padding-inline: 16.666%;
+  }
   .projects .projects__list {
     padding-block: 25rem 20rem;
   }
@@ -734,6 +738,8 @@ body.modal-open {
   z-index: 20;
   padding: 10rem 0;
   color: #ffffff;
+  padding-inline: 8.333%;
+  overflow: hidden;
 }
 .about::before {
   content: "";
@@ -746,7 +752,7 @@ body.modal-open {
 }
 .about .about__close {
   position: fixed;
-  right: 16.666667%;
+  right: 16.666%;
   top: 35px;
   display: none;
   font-size: 2rem;
@@ -774,6 +780,13 @@ body.modal-open {
 .about .about__content .overflow:not(:last-child) {
   margin-bottom: 3rem;
 }
+.about .logo {
+  background-color: #e7a054;
+  translate: 0% 0%;
+  position: absolute;
+  top: 20px;
+  z-index: 0;
+}
 
 @media screen and (min-width: 992px) {
   .about {
@@ -786,7 +799,7 @@ body.modal-open {
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 0 16.66667%;
+    padding: 0 16.666%;
     opacity: 0;
     pointer-events: none;
   }
@@ -834,6 +847,9 @@ body.modal-open {
   .about .about__content .overflow * {
     transform: translateY(100%);
   }
+  .about .logo {
+    display: none;
+  }
 }
 .logo {
   position: fixed;
@@ -854,15 +870,6 @@ body.modal-open {
     width: 30vw;
   }
 }
-main {
-  margin-inline: 8.333%;
-}
-@media screen and (min-width: 992px) {
-  main {
-    margin-inline: 16.666%;
-  }
-}
-
 body {
   background-color: #e1e6ea;
 }

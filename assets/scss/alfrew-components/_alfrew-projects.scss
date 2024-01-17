@@ -2,6 +2,7 @@
   position: relative;
   z-index: 10;
   min-height: 100lvh;
+  padding-inline: 8.333%;
   .projects__list {
     padding-block: 16.5rem 10rem;
   }
@@ -173,6 +174,7 @@
 
 @include for-size("lg") {
   .projects {
+    padding-inline: 16.666%;
     .projects__list {
       padding-block: 25rem 20rem;
     }

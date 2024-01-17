@@ -2,6 +2,7 @@ const IMG_LIST = document.querySelectorAll("img");
 const VIDEO_LIST = document.querySelectorAll("video");
 const PARALLAX_ASSET_LIST = document.querySelectorAll(".parallax-asset");
 const canHover = window.matchMedia("(hover: hover)").matches;
+const mainMediaQuerie = 992;
 let transitionEnd = whichTransitionEvent();
 
 IMG_LIST.forEach((img) => {

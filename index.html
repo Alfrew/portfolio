@@ -19,11 +19,19 @@
 <body>
   <header class="header">
     <div class="header__title-container">
-      <h1>alfredo filigheddu</h1>
+      <h1 class="ttl">alfredo filigheddu</h1>
       <h2 class="ttu">Front-end developer</h2>
     </div>
-    <div class="header__about">
-      <div class="js-open-about">about</div>
+    <div class="header__cta-container">
+      <div class="header__language-selector">
+        <div class="language-selector">
+          <a class="language-selector__link italian-selector ttu p2" href="index.html" onclick="changeLanguage('it')">IT</a>
+          <a class="language-selector__link english-selector ttu p2" href="index.html" onclick="changeLanguage('en')">EN</a>
+        </div>
+      </div>
+      <div class="header__about">
+        <div class="js-open-about">about</div>
+      </div>
     </div>
   </header>
   <main>
@@ -31,7 +39,7 @@
       <ul class="projects__list">
         <li class="projects__list-item" data-color="#00FF00">
           <div class="projects__link-wrapper">
-            <div class="projects__link">C2 Montreal Clone</div>
+            <div class="projects__link" data-i18n="projects__c2mtl-title"></div>
             <div class="projects__stack">
               <img src="assets/img/html-1.svg" alt="HTML">
               <img src="assets/img/css-3.svg" alt="CSS">
@@ -40,15 +48,14 @@
             </div>
           </div>
           <div class="overflow">
-            <div class="projects__link-description">
-              2023 -- Personal project for animation studies.
+            <div class="projects__link-description" data-i18n="projects__c2mtl-subtitle">
             </div>
           </div>
         </li>
 
         <li class="projects__list-item" data-color="#FFA827">
           <div class="projects__link-wrapper">
-            <div class="projects__link">Movie App</div>
+            <div class="projects__link" data-i18n="projects__movieApp-title"></div>
             <div class="projects__stack">
               <img src="assets/img/html-1.svg" alt="HTML">
               <img src="assets/img/css-3.svg" alt="CSS">
@@ -57,15 +64,14 @@
             </div>
           </div>
           <div class="overflow">
-            <div class="projects__link-description">
-              2023 -- Personal project for animation studies.
+            <div class="projects__link-description" data-i18n="projects__movieApp-subtitle">
             </div>
           </div>
         </li>
 
         <li class="projects__list-item" data-color="#9CCC65">
           <div class="projects__link-wrapper">
-            <div class="projects__link">Finance State Calculator</div>
+            <div class="projects__link" data-i18n="projects__fsc-title"></div>
             <div class="projects__stack">
               <img src="assets/img/html-1.svg" alt="HTML">
               <img src="assets/img/css-3.svg" alt="CSS">
@@ -74,8 +80,22 @@
             </div>
           </div>
           <div class="overflow">
-            <div class="projects__link-description">
-              2023 -- Personal project for animation studies.
+            <div class="projects__link-description" data-i18n="projects__fsc-subtitle">
+            </div>
+          </div>
+        </li>
+
+        <li class="projects__list-item" data-color="#F47D30">
+          <div class="projects__link-wrapper">
+            <div class="projects__link" data-i18n="projects__memory-title"></div>
+            <div class="projects__stack">
+              <img src="assets/img/html-1.svg" alt="HTML">
+              <img src="assets/img/css-3.svg" alt="CSS">
+              <img src="assets/img/javascript-1.svg" alt="JavaScript">
+            </div>
+          </div>
+          <div class="overflow">
+            <div class="projects__link-description" data-i18n="projects__memory-subtitle">
             </div>
           </div>
         </li>
@@ -84,24 +104,24 @@
     <section class="about" data-open="false">
       <div class="about__close">
         <div class="overflow">
-          <div class="js-close-about text-splitter">close</div>
+          <div class="js-close-about text-splitter ttl" data-i18n="about__close">close</div>
         </div>
       </div>
       <div class="about__content">
         <div class="overflow">
-          <h2>Hi, I'm Alfrew!</h2>
+          <h2 data-i18n="about__title"></h2>
         </div>
         <div class="overflow">
-          <p>As an independant creative developer, I help agencies and designers create digital experiences, with an emphasis on interaction, effectiveness, and creativity.</p>
+          <p data-i18n="about__copy1"></p>
         </div>
         <div class="overflow">
-          <p>I have been fortunate enough to collaborate with a lot of talented people, that helped me grow as a creative mind.</p>
+          <p data-i18n="about__copy2"></p>
         </div>
         <div class="overflow">
-          <p>Originally from Lyon 🇫🇷, I am now based in Amsterdam 🇳🇱 and officiating as a fulltime freelancer.</p>
+          <p data-i18n="about__copy3"></p>
         </div>
         <div class="overflow">
-          <p>Get in touch on twitter, via mail or check out my codepen. Available for freelance work.</p>
+          <p data-i18n="about__copy4"></p>
         </div>
       </div>
       <div class="logo"></div>
@@ -119,7 +139,7 @@
   </section>
 
   <script src="assets/js/shared/general.js"></script>
-  <!-- <script src="assets/js/shared/language.js"></script> -->
+  <script src="assets/js/shared/language.js"></script>
   <script src="assets/js/alfrew-components/alfrew-header.js"></script>
   <script src="assets/js/alfrew-components/alfrew-logo.js"></script>
   <script src="assets/js/alfrew-components/alfrew-about.js"></script>

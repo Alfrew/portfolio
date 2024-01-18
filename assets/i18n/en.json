@@ -1,0 +1,19 @@
+{
+  "header__title": "Alfredo Filigheddu",
+  "header__subtitle": "Front-End Developer",
+  "header__about-btn": "About",
+  "projects__c2mtl-title": "C2 Montreal (Clone Site)",
+  "projects__c2mtl-subtitle": "2023 -- Personal project carried out to study and improve the development of animations.",
+  "projects__movieApp-title": "Movie App (Mobile only)",
+  "projects__movieApp-subtitle": "2023 -- Personal project developed to apply and consolidate the concepts learned during work experiences.",
+  "projects__fsc-title": "Finance State Calculator",
+  "projects__fsc-subtitle": "2023 -- Personal project based on a Steve Antonioni's spreadsheet.",
+  "projects__memory-title": "Headspace Memory Game",
+  "projects__memory-subtitle": "2022 -- Project carried out during the Front-End development bootcamp.",
+  "about__close": "Close",
+  "about__title": "Hi, I'm Alfrew!",
+  "about__copy1": "As a creative person and Front-End Developer, my goal is to work on innovative projects, which focus on interaction and creativity.",
+  "about__copy2": "I have been fortunate enough to work for large and small companies, which gave me the opportunity to improve a lot as a developer and understand how much I love this job.",
+  "about__copy3": "I live in a seaside village in northern Sardinia 🇮🇹​, I currently work remotely as a developer for Abirk Italia.",
+  "about__copy4": "Let's get in touch via email, take a look at my Github or download my CV."
+}

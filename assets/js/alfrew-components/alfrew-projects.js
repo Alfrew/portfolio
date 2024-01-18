@@ -35,5 +35,7 @@ function openProject(element) {
     PROJECT_BG_LIST[3].style.backgroundColor = color;
     PROJECT_EL.setAttribute("data-open", true);
     document.body.classList.add("modal-open");
+    jsSideScroll = document.querySelector(".js-side-scroll");
+    jsSideScrollChildList = jsSideScroll.children;
   });
 }

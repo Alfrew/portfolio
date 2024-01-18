@@ -25,13 +25,20 @@
       margin: 0;
     }
   }
+
+  .header__cta-container {
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    opacity: 0;
+    transition: opacity 2s;
+  }
+
   .header__about {
     position: relative;
     display: none;
     font-size: 2rem;
     font-weight: 700;
-    opacity: 0;
-    transition: opacity 2s;
     * {
       cursor: pointer;
     }
@@ -39,7 +46,7 @@
 
   &[data-isVisible="true"] {
     .header__title-container,
-    .header__about {
+    .header__cta-container {
       opacity: 1;
     }
   }

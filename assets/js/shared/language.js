@@ -1,11 +1,11 @@
 const EN_ELEMENT_LIST = document.querySelectorAll(".english-selector");
-const FR_ELEMENT_LIST = document.querySelectorAll(".french-selector");
+const IT_ELEMENT_LIST = document.querySelectorAll(".italian-selector");
 let langData;
-
 // Call updateContent() on page load
 window.addEventListener("DOMContentLoaded", async () => {
-  const userPreferredLanguage = localStorage.getItem("language") || "en";
+  const userPreferredLanguage = localStorage.getItem("language") || document.documentElement.getAttribute("lang");
   langData = await fetchLanguageData(userPreferredLanguage);
+  document.documentElement.setAttribute("lang", userPreferredLanguage);
   hideLanguages(userPreferredLanguage);
   updateContent(langData);
   updateAriaLabel(langData);
@@ -63,12 +63,12 @@ function hideLanguages(language) {
       EN_ELEMENT_LIST.forEach((el) => {
         el.classList.add("d-none");
       });
-      FR_ELEMENT_LIST.forEach((el) => {
+      IT_ELEMENT_LIST.forEach((el) => {
         el.classList.remove("d-none");
       });
       break;
-    case "fr":
-      FR_ELEMENT_LIST.forEach((el) => {
+    case "it":
+      IT_ELEMENT_LIST.forEach((el) => {
         el.classList.add("d-none");
       });
       EN_ELEMENT_LIST.forEach((el) => {

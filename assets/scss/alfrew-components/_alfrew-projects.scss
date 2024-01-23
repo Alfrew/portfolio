@@ -91,23 +91,71 @@
     right: 0;
     top: 0;
     z-index: 50;
-    transition: translate 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
     translate: 100%;
+    opacity: 0;
+    transition: translate 0.8s cubic-bezier(0.165, 0.84, 0.44, 1), opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition-delay: 0.5s;
+    &[data-isVisible="true"] {
+      opacity: 1;
+    }
+  }
+  .project__btn {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    display: none;
+    background-color: black;
+    height: 100lvh;
+    width: 100px;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &::before {
+      content: "<";
+      position: absolute;
+      top: 50%;
+      left: 25%;
+      font-size: 8rem;
+      color: white;
+    }
+    &.js-side-btn--left {
+      left: 0;
+    }
+    &.js-side-btn--right {
+      right: 0;
+      &::before {
+        content: ">";
+      }
+    }
+
+    @include hover {
+      opacity: 0.3;
+      cursor: pointer;
+    }
   }
   .project__close {
     position: absolute;
     top: 5rem;
     right: 5rem;
+    z-index: 15;
+    font-size: $font-size-h3;
+    cursor: pointer;
   }
   .project__header {
     position: absolute;
     top: 5rem;
     left: 5rem;
+    z-index: 15;
+    font-size: $font-size-h3;
   }
 
   .project__section {
     min-height: 100lvh;
     min-width: 100vw;
+    opacity: 0;
+    transition: opacity 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
+    &[data-isVisible="true"] {
+      opacity: 1;
+    }
   }
   .project__section-wrapper {
     display: flex;
@@ -131,35 +179,34 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     aspect-ratio: 16/10;
     max-height: 70%;
   }
   .project__section-media-wrapper--description {
+    justify-content: space-between;
     .project__section-copy {
       font-size: 1.6rem;
       margin-bottom: 10rem;
     }
   }
   .project__section-media-wrapper--3 {
+    justify-content: space-between;
     flex-wrap: nowrap;
     .project__section-media {
-      aspect-ratio: 9/20;
       height: 85%;
       width: auto;
     }
   }
   .project__section-media-wrapper--4 {
     .project__section-media {
-      aspect-ratio: 16/10;
       height: 47%;
       width: auto;
     }
   }
   .project__section-media {
-    aspect-ratio: 16/10;
-    height: 100%;
-    width: auto;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: top center;
   }
@@ -231,6 +278,9 @@
     }
   }
   .project {
+    .project__btn {
+      display: block;
+    }
     .project__content {
       display: flex;
       height: 100%;
@@ -238,6 +288,10 @@
     .project__section-copy {
       width: 60vw;
       font-size: 3.5rem;
+    }
+    .project__section-media {
+      height: 100%;
+      width: auto;
     }
     .project__section-media-wrapper--description {
       align-items: flex-end;

@@ -37,6 +37,21 @@ function elementIsVisible(element) {
   }
 }
 
+function elementIsVisibleWheel(element) {
+  const triggerBottom = window.innerHeight * 0.5;
+  const triggerRight = window.innerWidth * 0.5;
+
+  const boxTop = element.getBoundingClientRect().top;
+  const boxLeft = element.getBoundingClientRect().left;
+  const triggerLeft = -element.getBoundingClientRect().width / 2;
+  const triggerTop = -element.getBoundingClientRect().height / 2;
+  if (boxTop < triggerBottom && boxTop > triggerTop && boxLeft < triggerRight && boxLeft > triggerLeft) {
+    element.setAttribute("data-isVisible", true);
+  } else {
+    element.setAttribute("data-isVisible", false);
+  }
+}
+
 function wordSplitter(el, delayS) {
   el.forEach((line) => {
     let word = line.querySelector(".text-splitter");

@@ -6,6 +6,10 @@
   padding-inline: 8.333%;
   overflow: hidden;
 
+  a {
+    text-decoration: underline wavy;
+  }
+
   &::before {
     content: "";
     position: absolute;

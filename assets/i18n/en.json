@@ -15,5 +15,19 @@
   "about__copy1": "As a creative person and Front-End Developer, my goal is to work on innovative projects, which focus on interaction and creativity.",
   "about__copy2": "I have been fortunate enough to work for large and small companies, which gave me the opportunity to improve a lot as a developer and understand how much I love this job.",
   "about__copy3": "I live in a seaside village in northern Sardinia 🇮🇹​, I currently work remotely as a developer for Abirk Italia.",
-  "about__copy4": "Let's get in touch via email, take a look at my Github or download my CV."
+  "about__copy4": "Let's get in touch via <a href='mailto:filigheddualfredo@gmail.com'>email</a>, take a look at my <a href='https://github.com/Alfrew' target='blank'>Github</a> or download my <a href='' target='blank'>Resume</a>..",
+  "c2mtl__title": "C2 Montreal (Clone Site)",
+  "c2mtl__description": "C2 Montreal (Clone Site)",
+  "c2mtl__copy1": "C2 Montreal (Clone Site)",
+  "c2mtl__copy2": "C2 Montreal (Clone Site)",
+  "fsc__title": "Finance State Calculator",
+  "fsc__description": "Finance State Calculator",
+  "fsc__copy1": "Finance State Calculator",
+  "fsc__copy2": "Finance State Calculator",
+  "memory__title": "Headspace Memory Game",
+  "memory__description": "Headspace Memory Game",
+  "memory__copy": "Headspace Memory Game",
+  "movie__title": "Movie App (Mobile only)",
+  "movie__description": "Movie App (Mobile only)",
+  "movie__copy": "Movie App (Mobile only)"
 }

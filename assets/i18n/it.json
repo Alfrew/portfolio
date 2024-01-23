@@ -15,5 +15,19 @@
   "about__copy1": "Come creativo e sviluppatore Front-End, il mio obiettivo è quello di poter lavorare a progetti innovativi, che si focalizzano sulle interazioni e la creatività.",
   "about__copy2": "Ho avuto la fortuna di poter lavorare per realtà di grandi e di piccole dimensioni, che mi hanno dato la possibilità di migliorare molto come developer e capire quanto amo questo lavoro.",
   "about__copy3": "Vivo in un paesino di mare del nord Sardegna 🇮🇹​, attualmente lavoro da remoto come sviluppatore per Abirk Italia.",
-  "about__copy4": "Mettiamoci in contatto via mail, dai un'occhiata al mio Github oppure scarica il mio CV."
+  "about__copy4": "Mettiamoci in contatto via <a href='mailto:filigheddualfredo@gmail.com'>mail</a>, dai un'occhiata al mio <a href='https://github.com/Alfrew' target='blank'>Github</a> oppure scarica il mio <a href='https://drive.google.com/file/d/12Uy7_C5_sW3Vo3Gfh8Bx3hsy3sZV8P9l/view?usp=drive_link' target='blank'>CV</a>.",
+  "c2mtl__title": "C2 Montreal (Sito Clone)",
+  "c2mtl__description": "C2 Montreal (Sito Clone)",
+  "c2mtl__copy1": "C2 Montreal (Sito Clone)",
+  "c2mtl__copy2": "C2 Montreal (Sito Clone)",
+  "fsc__title": "Calcolatore Situazione Finanziaria",
+  "fsc__description": "Calcolatore Situazione Finanziaria",
+  "fsc__copy1": "Calcolatore Situazione Finanziaria",
+  "fsc__copy2": "Calcolatore Situazione Finanziaria",
+  "memory__title": "Headspace Memory Game",
+  "memory__description": "Headspace Memory Game",
+  "memory__copy": "Headspace Memory Game",
+  "movie__title": "Movie App (Mobile only)",
+  "movie__description": "Movie App (Mobile only)",
+  "movie__copy": "Movie App (Mobile only)"
 }

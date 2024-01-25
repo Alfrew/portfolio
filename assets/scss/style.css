@@ -671,6 +671,7 @@ body.modal-open {
 .project .project__section-media-wrapper--3 {
   justify-content: space-between;
   flex-wrap: nowrap;
+  width: 90vw;
 }
 .project .project__section-media-wrapper--3 .project__section-media {
   height: 85%;
@@ -783,6 +784,9 @@ body.modal-open {
     width: 60vw;
     font-size: 3.5rem;
   }
+  .project .project__section-media-wrapper--3 {
+    width: 60vw;
+  }
   .project .project__section-media-wrapper--description, .project .project__section-media-wrapper--description-mobile {
     align-items: flex-end;
     flex-wrap: nowrap;
@@ -797,8 +801,8 @@ body.modal-open {
     margin: 0;
   }
   .project .project__section-media-wrapper--description .project__section-media, .project .project__section-media-wrapper--description-mobile .project__section-media {
-    width: auto;
-    height: 100%;
+    width: 70%;
+    height: auto;
   }
   .project .project__section-media-wrapper--description-mobile {
     gap: 20rem;

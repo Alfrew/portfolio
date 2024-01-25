@@ -1,0 +1,15 @@
+.js-cont {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.js-scroll {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100%;
+  will-change: transform;
+}

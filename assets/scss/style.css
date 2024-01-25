@@ -608,8 +608,8 @@ body.modal-open {
 }
 .project .project__close {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  right: 0;
+  padding: 2rem;
   z-index: 20;
   font-size: var(--font-size-h3);
   cursor: pointer;
@@ -762,8 +762,7 @@ body.modal-open {
 }
 @media screen and (min-width: 992px) {
   .project .project__close {
-    top: 5rem;
-    right: 5rem;
+    padding: 5rem;
   }
   .project .project__header {
     top: 5rem;

@@ -134,8 +134,8 @@
   }
   .project__close {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    right: 0;
+    padding: 2rem;
     z-index: 20;
     font-size: $font-size-h3;
     cursor: pointer;
@@ -285,8 +285,7 @@
   }
   .project {
     .project__close {
-      top: 5rem;
-      right: 5rem;
+      padding: 5rem;
     }
     .project__header {
       top: 5rem;

@@ -17,7 +17,7 @@ function moveAboutLogo() {
 
 function openAbout() {
   LOGO_EL.style.zIndex = "15";
-  LOGO_EL.style.transform = "scale(8)";
+  LOGO_EL.style.transform = "scale(10)";
   document.body.classList.add("modal-open");
   LOGO_EL.addEventListener(
     transitionEnd,

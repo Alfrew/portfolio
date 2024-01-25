@@ -608,17 +608,18 @@ body.modal-open {
 }
 .project .project__close {
   position: absolute;
-  top: 5rem;
-  right: 5rem;
-  z-index: 15;
+  top: 2rem;
+  right: 2rem;
+  z-index: 20;
   font-size: var(--font-size-h3);
   cursor: pointer;
 }
 .project .project__header {
   position: absolute;
-  top: 5rem;
-  left: 5rem;
-  z-index: 15;
+  padding: 2rem;
+  padding-right: 5rem;
+  z-index: 5;
+  width: 100vw;
   font-size: var(--font-size-h3);
 }
 .project .project__section {
@@ -654,14 +655,18 @@ body.modal-open {
   flex-wrap: wrap;
   justify-content: center;
   aspect-ratio: 16/10;
-  max-height: 70%;
+  max-height: 60%;
 }
-.project .project__section-media-wrapper--description {
+.project .project__section-media-wrapper--description, .project .project__section-media-wrapper--description-mobile {
   justify-content: space-between;
+  aspect-ratio: 0;
 }
-.project .project__section-media-wrapper--description .project__section-copy {
+.project .project__section-media-wrapper--description .project__section-copy, .project .project__section-media-wrapper--description-mobile .project__section-copy {
   font-size: 1.6rem;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
+}
+.project .project__section-media-wrapper--description-mobile {
+  justify-content: flex-start;
 }
 .project .project__section-media-wrapper--3 {
   justify-content: space-between;
@@ -756,6 +761,18 @@ body.modal-open {
   }
 }
 @media screen and (min-width: 992px) {
+  .project .project__close {
+    top: 5rem;
+    right: 5rem;
+  }
+  .project .project__header {
+    top: 5rem;
+    left: 5rem;
+    width: auto;
+    padding: 0;
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
   .project .project__btn {
     display: block;
   }
@@ -767,11 +784,7 @@ body.modal-open {
     width: 60vw;
     font-size: 3.5rem;
   }
-  .project .project__section-media {
-    height: 100%;
-    width: auto;
-  }
-  .project .project__section-media-wrapper--description {
+  .project .project__section-media-wrapper--description, .project .project__section-media-wrapper--description-mobile {
     align-items: flex-end;
     flex-wrap: nowrap;
     gap: 10rem;
@@ -779,9 +792,24 @@ body.modal-open {
     max-width: 1500px;
     padding: 10rem;
     width: 100vw;
+    aspect-ratio: 16/10;
   }
-  .project .project__section-media-wrapper--description .project__section-copy {
+  .project .project__section-media-wrapper--description .project__section-copy, .project .project__section-media-wrapper--description-mobile .project__section-copy {
     margin: 0;
+  }
+  .project .project__section-media-wrapper--description .project__section-media, .project .project__section-media-wrapper--description-mobile .project__section-media {
+    width: auto;
+    height: 100%;
+  }
+  .project .project__section-media-wrapper--description-mobile {
+    gap: 20rem;
+    padding: 5rem;
+  }
+  .project .project__section-media-wrapper--description-mobile .project__section-copy {
+    margin-left: 20rem;
+  }
+  .project .project__section-media-wrapper--description-mobile .project__section-media {
+    margin-right: 40rem;
   }
 }
 @media screen and (min-width: 1200px) {

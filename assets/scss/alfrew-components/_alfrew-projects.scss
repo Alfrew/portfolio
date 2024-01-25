@@ -134,17 +134,18 @@
   }
   .project__close {
     position: absolute;
-    top: 5rem;
-    right: 5rem;
-    z-index: 15;
+    top: 2rem;
+    right: 2rem;
+    z-index: 20;
     font-size: $font-size-h3;
     cursor: pointer;
   }
   .project__header {
     position: absolute;
-    top: 5rem;
-    left: 5rem;
-    z-index: 15;
+    padding: 2rem;
+    padding-right: 5rem;
+    z-index: 5;
+    width: 100vw;
     font-size: $font-size-h3;
   }
 
@@ -181,13 +182,18 @@
     flex-wrap: wrap;
     justify-content: center;
     aspect-ratio: 16/10;
-    max-height: 70%;
+    max-height: 60%;
   }
   .project__section-media-wrapper--description {
     justify-content: space-between;
+    aspect-ratio: 0;
     .project__section-copy {
       font-size: 1.6rem;
-      margin-bottom: 10rem;
+      margin-bottom: 5rem;
+    }
+    &-mobile {
+      @extend .project__section-media-wrapper--description;
+      justify-content: flex-start;
     }
   }
   .project__section-media-wrapper--3 {
@@ -278,6 +284,18 @@
     }
   }
   .project {
+    .project__close {
+      top: 5rem;
+      right: 5rem;
+    }
+    .project__header {
+      top: 5rem;
+      left: 5rem;
+      width: auto;
+      padding: 0;
+      background-color: transparent !important;
+      box-shadow: none !important;
+    }
     .project__btn {
       display: block;
     }
@@ -289,10 +307,6 @@
       width: 60vw;
       font-size: 3.5rem;
     }
-    .project__section-media {
-      height: 100%;
-      width: auto;
-    }
     .project__section-media-wrapper--description {
       align-items: flex-end;
       flex-wrap: nowrap;
@@ -301,8 +315,24 @@
       max-width: 1500px;
       padding: 10rem;
       width: 100vw;
+      aspect-ratio: 16/10;
       .project__section-copy {
         margin: 0;
+      }
+      .project__section-media {
+        width: auto;
+        height: 100%;
+      }
+      &-mobile {
+        @extend .project__section-media-wrapper--description;
+        gap: 20rem;
+        padding: 5rem;
+        .project__section-copy {
+          margin-left: 20rem;
+        }
+        .project__section-media {
+          margin-right: 40rem;
+        }
       }
     }
   }

@@ -42,6 +42,9 @@ function openProject(element, index, color) {
     setTimeout(() => {
       projectWrapper.setAttribute("data-isVisible", true);
     }, 1100);
+    let projectHeader = projectWrapper.querySelector(".project__header");
+    projectHeader.style.backgroundColor = color;
+    projectHeader.style.boxShadow = `0 2rem 3rem 3rem ${color}`;
 
     addSideBtnListener();
     addSideScrollerListener();

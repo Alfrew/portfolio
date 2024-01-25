@@ -8,7 +8,7 @@ let structureInterval = setInterval(() => {
   if (langData) {
     STRUCTURE_C2MTL = `
     <div class="project__close">X</div>
-    <h1 class="project__header" >${langData["c2mtl__title"]}</h1>
+    <a class="project__header" href="https://github.com/Alfrew/c2mtlClone" target="blank">${langData["c2mtl__title"]}</a>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -59,6 +59,16 @@ let structureInterval = setInterval(() => {
       <div class="project__section">
         <div class="project__section-wrapper">
           <div class="project__section-content">
+            <div class="project__section-copy-wrapper">
+              <h1 class="project__section-copy ttu" >${langData["c2mtl__copy2"]}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
             <div class="project__section-media-wrapper">
               <img class="project__section-media" src="assets/img/c2mtl-en1.jpg" alt="" srcset="">
             </div>
@@ -74,24 +84,12 @@ let structureInterval = setInterval(() => {
             </div>
           </div>
         </div>
-      </div>
-    
-      <div class="project__section">
-        <div class="project__section-wrapper">
-          <div class="project__section-content">
-            <div class="project__section-copy-wrapper">
-              <h1 class="project__section-copy ttu" >${langData["c2mtl__copy2"]}</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    
+      </div> 
     </div>
     `;
     STRUCTURE_FSC = `
     <div class="project__close">X</div>
-    <h1 class="project__header" >${langData["fsc__title"]}</h1>
+    <a class="project__header" href="https://github.com/Alfrew/financeStateCalculator" target="blank">${langData["fsc__title"]}</a>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -120,36 +118,6 @@ let structureInterval = setInterval(() => {
       <div class="project__section">
         <div class="project__section-wrapper">
           <div class="project__section-content">
-            <div class="project__section-media-wrapper">
-              <img class="project__section-media" src="assets/img/fsc-en2.jpg" alt="" srcset="">
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="project__section">
-        <div class="project__section-wrapper">
-          <div class="project__section-content">
-            <div class="project__section-media-wrapper">
-              <img class="project__section-media" src="assets/img/fsc-it2.jpg" alt="" srcset="">
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="project__section">
-        <div class="project__section-wrapper">
-          <div class="project__section-content">
-            <div class="project__section-copy-wrapper">
-              <h1 class="project__section-copy ttu" >${langData["fsc__copy2"]}</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="project__section">
-        <div class="project__section-wrapper">
-          <div class="project__section-content">
             <div class="project__section-media-wrapper project__section-media-wrapper--3">
               <img class="project__section-media" src="assets/img/fsc-mobile1.png" alt="" srcset="">
               <img class="project__section-media" src="assets/img/fsc-mobile2.png" alt="" srcset="">
@@ -170,11 +138,41 @@ let structureInterval = setInterval(() => {
           </div>
         </div>
       </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-copy-wrapper">
+              <h1 class="project__section-copy ttu" >${langData["fsc__copy2"]}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <img class="project__section-media" src="assets/img/fsc-en1.jpg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <img class="project__section-media" src="assets/img/fsc-it1.jpg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     `;
     STRUCTURE_HM = `
     <div class="project__close">X</div>
-    <h1 class="project__header" >${langData["memory__title"]}</h1>
+    <a class="project__header" href="https://github.com/Alfrew/headspaceMemory" target="blank">${langData["memory__title"]}</a>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -226,7 +224,7 @@ let structureInterval = setInterval(() => {
     `;
     STRUCTURE_MA = `
     <div class="project__close">X</div>
-    <h1 class="project__header" >${langData["movie__title"]}</h1>
+    <a class="project__header" href="https://github.com/Alfrew/movieApp" target="blank">${langData["movie__title"]}</a>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -234,7 +232,7 @@ let structureInterval = setInterval(() => {
       <div class="project__section" data-isVisible="true">
         <div class="project__section-wrapper">
           <div class="project__section-content">
-            <div class="project__section-media-wrapper project__section-media-wrapper--description">
+            <div class="project__section-media-wrapper project__section-media-wrapper--description-mobile">
               <p class="project__section-copy" >${langData["movie__description"]}</p>
               <img class="project__section-media" src="assets/img/ma-home.png" alt="" srcset="">
             </div>

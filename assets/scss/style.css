@@ -662,7 +662,7 @@ body.modal-open {
   aspect-ratio: 0;
 }
 .project .project__section-media-wrapper--description .project__section-copy, .project .project__section-media-wrapper--description-mobile .project__section-copy {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-bottom: 5rem;
 }
 .project .project__section-media-wrapper--description-mobile {

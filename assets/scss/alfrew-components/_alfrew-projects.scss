@@ -199,6 +199,7 @@
   .project__section-media-wrapper--3 {
     justify-content: space-between;
     flex-wrap: nowrap;
+    width: 90vw;
     .project__section-media {
       height: 85%;
       width: auto;
@@ -306,6 +307,9 @@
       width: 60vw;
       font-size: 3.5rem;
     }
+    .project__section-media-wrapper--3 {
+      width: 60vw;
+    }
     .project__section-media-wrapper--description {
       align-items: flex-end;
       flex-wrap: nowrap;
@@ -319,8 +323,8 @@
         margin: 0;
       }
       .project__section-media {
-        width: auto;
-        height: 100%;
+        width: 70%;
+        height: auto;
       }
       &-mobile {
         @extend .project__section-media-wrapper--description;

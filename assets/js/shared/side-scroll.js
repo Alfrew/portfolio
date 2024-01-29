@@ -44,6 +44,9 @@ function addSideBtnListener() {
       el.setAttribute("data-isVisible", false);
     });
     index = Math.round(-latestScrollValue / window.innerWidth);
+    if (index <= 0) {
+      index = 0;
+    }
     jsSideScrollChildList[index].setAttribute("data-isVisible", true);
     updateScrollX();
   });
@@ -54,6 +57,9 @@ function addSideBtnListener() {
       el.setAttribute("data-isVisible", false);
     });
     index = Math.round(-latestScrollValue / window.innerWidth);
+    if (index >= jsSideScrollChildList.length) {
+      index = jsSideScrollChildList.length - 1;
+    }
     jsSideScrollChildList[index].setAttribute("data-isVisible", true);
     updateScrollX();
   });
@@ -77,9 +83,9 @@ function updateScrollX() {
   let maxValue = -jsSideScroll.getBoundingClientRect().width * (jsSideScrollChildList.length - 1);
   latestScrollValue = latestScrollValue < maxValue ? maxValue : latestScrollValue;
   jsSideScroll.style.transform = `translateX(${latestScrollValue}px)`;
-  if (latestScrollValue == 0) {
+  if (latestScrollValue >= 0) {
     leftBtn.classList.add("d-none");
-  } else if (latestScrollValue == maxValue) {
+  } else if (latestScrollValue <= maxValue) {
     rightBtn.classList.add("d-none");
   } else {
     leftBtn.classList.remove("d-none");

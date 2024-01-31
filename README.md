@@ -19,7 +19,7 @@ During the development I've learned how to manage the scrolling, wheel and touch
 
 ## Credits
 
-- <a href="https://github.com/Alfrew">Alfredo Filigheddu</a>
+- Developed by: <a href="https://github.com/Alfrew">Alfrew (me)</a>
 
 ## Features
 

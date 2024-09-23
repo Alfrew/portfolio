@@ -620,7 +620,14 @@ body.modal-open {
   padding-right: 5rem;
   z-index: 5;
   width: 100vw;
+}
+.project .project__header .project__header-title {
   font-size: var(--font-size-h3);
+}
+.project .project__header .project__header-subtitle {
+  font-size: var(--font-size-h4);
+  text-decoration: underline;
+  cursor: pointer;
 }
 .project .project__section {
   min-height: 100lvh;
@@ -722,6 +729,9 @@ body.modal-open {
   }
   .projects .projects__list-item:hover .projects__stack :nth-child(4) {
     transition-delay: 0.4s;
+  }
+  .projects .projects__list-item:hover .projects__stack :nth-child(5) {
+    transition-delay: 0.5s;
   }
 }
 @media screen and (min-width: 992px) {

@@ -16,12 +16,17 @@
   "header__about-btn": "About",
   "header__subtitle": "Front-End Developer",
   "header__title": "Alfredo Filigheddu",
+  "live-demo": "Demo",
   "memory__copy": "With three different game difficulties",
   "memory__description": "One of the first projects in which I used JavaScript (jQuery).<br/> Interactive game developed during the Epicode School Front-End development course, graphically I decided to use colors and illustrations from the meditation app Headspace.",
   "memory__title": "Headspace Memory Game",
   "movie__copy": "Wide freedom of filtering and searching for films and TV shows",
   "movie__description": "Application developed to create autonomous work processes, starting from the design, moving on to the implementation of the features up to the testing phase.<br/>All using an external Web API with attached database.",
   "movie__title": "Movie App (Mobile only)",
+  "nShop__copy1": "The site has an administration page where you can add, edit and remove the products.",
+  "nShop__copy2": "The app has also both a light theme and a dark theme.",
+  "nShop__description": "Application developed to test and experiment with Vue and its main characteristics.<br/> It was used Bulma CSS as style framework and Firestore for the data management of the products.",
+  "nShop__title": "Game Shop App",
   "projects__c2mtl-subtitle": "2023 -- Personal project carried out to study and improve the development of animations.",
   "projects__c2mtl-title": "C2 Montreal (Clone Site)",
   "projects__fsc-subtitle": "2023 -- Personal project based on a Steve Antonioni's spreadsheet.",
@@ -29,5 +34,7 @@
   "projects__memory-subtitle": "2022 -- Project carried out during the Front-End development bootcamp.",
   "projects__memory-title": "Headspace Memory Game",
   "projects__movieApp-subtitle": "2023 -- Personal project developed to apply and consolidate the concepts learned during work experiences.",
-  "projects__movieApp-title": "Movie App (Mobile only)"
+  "projects__movieApp-title": "Movie App (Mobile only)",
+  "projects__nShop-subtitle": "2024 -- Personal project developed to consolidate the concepts learned after a Vue course.",
+  "projects__nShop-title": "Game Shop App"
 }

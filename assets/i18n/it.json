@@ -16,12 +16,17 @@
   "header__about-btn": "About",
   "header__subtitle": "Front-End Developer",
   "header__title": "Alfredo Filigheddu",
+  "live-demo": "Demo",
   "memory__copy": "Con ben tre diverse difficoltà di gioco",
   "memory__description": "Uno dei primi progetti in cui ho utilizzato JavaScript (jQuery).<br/> Gioco interattivo sviluppato durante il corso di Front-End development di Epicode School, graficamente ho deciso di utilizzare colori ed illustrazioni dell'app di meditazione Headspace.",
   "memory__title": "Headspace Memory Game",
   "movie__copy": "Ampia libertà di filtraggio e ricerca di film e serie tv",
   "movie__description": "Applicazione sviluppata per creare dei processi di lavoro autonomi, a partire dal design, passando all'implementazione delle feature fino ad arrivare alla fase di testing.<br/>Il tutto utilizzando una Web API esterna con database annesso.",
   "movie__title": "Movie App (Mobile only)",
+  "nShop__copy1": "Il sito presenta una pagina accessibile tramite login in cui è possibile aggiungere, modificare e rimuovere i prodotti.",
+  "nShop__copy2": "L'applicazione ha sia un tema chiaro che uno scuro.",
+  "nShop__description": "Applicazione sviluppata per sperimentare l'utilizzo di Vue e delle sue principali funzionalità.<br/> Per la parte stilistica del sito è stato utilizzato il framework Bulma CSS mentre per quanto riguarda il salvataggio dei dati si è utilizzato Firestore come database.",
+  "nShop__title": "Game Shop App",
   "projects__c2mtl-subtitle": "2023 -- Progetto personale svolto per studiare e migliorare lo sviluppo di animazioni.",
   "projects__c2mtl-title": "C2 Montreal (Sito Clone)",
   "projects__fsc-subtitle": "2023 -- Progetto personale basato su un foglio di calcolo di Steve Antonioni.",
@@ -29,5 +34,7 @@
   "projects__memory-subtitle": "2022 -- Progetto svolto durante il corso di sviluppo Front-End.",
   "projects__memory-title": "Headspace Memory Game",
   "projects__movieApp-subtitle": "2023 -- Progetto personale svolto per applicare e sedimentare i concetti appresi durante le esperienze lavorative.",
-  "projects__movieApp-title": "Movie App (Mobile only)"
+  "projects__movieApp-title": "Movie App (Mobile only)",
+  "projects__nShop-subtitle": "2024 -- Progetto personale sviluppato per sedimentare i concetti appresi a seguito di un corso incentrato su Vue.",
+  "projects__nShop-title": "Game Shop App"
 }

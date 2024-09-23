@@ -146,7 +146,15 @@
     padding-right: 5rem;
     z-index: 5;
     width: 100vw;
-    font-size: $font-size-h3;
+
+    .project__header-title {
+      font-size: $font-size-h3;
+    }
+    .project__header-subtitle {
+      font-size: $font-size-h4;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   .project__section {
@@ -243,7 +251,7 @@
             opacity: 1;
             transform: translateY(0);
           }
-          @for $i from 1 to 5 {
+          @for $i from 1 to 6 {
             :nth-child(#{$i}) {
               transition-delay: #{$i * 0.1}s;
             }

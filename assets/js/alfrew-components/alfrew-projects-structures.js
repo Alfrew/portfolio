@@ -1,5 +1,6 @@
 let STRUCTURE_C2MTL;
 let STRUCTURE_FSC;
+let STRUCTURE_GSA;
 let STRUCTURE_HM;
 let STRUCTURE_MA;
 let PROJECTS_STRUCTURE_LIST = [];
@@ -8,7 +9,10 @@ let structureInterval = setInterval(() => {
   if (langData) {
     STRUCTURE_C2MTL = `
     <div class="project__close">X</div>
-    <a class="project__header" href="https://github.com/Alfrew/c2mtlClone" target="blank">${langData["c2mtl__title"]}</a>
+    <div class="project__header">
+      <a class="project__header-title" href="https://github.com/Alfrew/c2mtlClone" target="blank">${langData["c2mtl__title"]}</a><br />
+      <a class="project__header-subtitle" href="https://alfrew.github.io/c2mtlClone/" target="blank">${langData["live-demo"]}</a>
+    </div>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -89,7 +93,10 @@ let structureInterval = setInterval(() => {
     `;
     STRUCTURE_FSC = `
     <div class="project__close">X</div>
-    <a class="project__header" href="https://github.com/Alfrew/financeStateCalculator" target="blank">${langData["fsc__title"]}</a>
+    <div class="project__header">
+      <a class="project__header-title" href="https://github.com/Alfrew/financeStateCalculator" target="blank">${langData["fsc__title"]}</a><br />
+      <a class="project__header-subtitle" href="https://alfrew.github.io/financeStateCalculator/" target="blank">${langData["live-demo"]}</a>
+    </div>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -170,9 +177,104 @@ let structureInterval = setInterval(() => {
       </div>
     </div>
     `;
+    STRUCTURE_GSA = `
+    <div class="project__close">X</div>
+    <div class="project__header">
+      <a class="project__header-title" href="https://github.com/Alfrew/n-shop" target="blank">${langData["nShop__title"]}</a><br />
+      <a class="project__header-subtitle" href="https://alfrew.github.io/n-shop/" target="blank">${langData["live-demo"]}</a>
+    </div>
+    <div class="project__btn js-side-btn--left d-none"></div>
+    <div class="project__btn js-side-btn--right"></div>
+    <div class="project__content js-side-scroll">
+    
+      <div class="project__section" data-isVisible="true">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper project__section-media-wrapper--description">
+              <p class="project__section-copy" >${langData["nShop__description"]}</p>
+              <img class="project__section-media" src="assets/img/gsa-home.jpeg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <video class="project__section-media" src="assets/img/gsa-video.mp4" autoplay loop muted>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-copy-wrapper">
+              <h1 class="project__section-copy ttu" >${langData["nShop__copy1"]}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <img class="project__section-media" src="assets/img/gsa-admin1.jpeg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <img class="project__section-media" src="assets/img/gsa-admin2.jpeg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div> 
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-copy-wrapper">
+              <h1 class="project__section-copy ttu" >${langData["nShop__copy2"]}</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <img class="project__section-media" src="assets/img/gsa-theme1.jpeg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="project__section">
+        <div class="project__section-wrapper">
+          <div class="project__section-content">
+            <div class="project__section-media-wrapper">
+              <img class="project__section-media" src="assets/img/gsa-theme2.jpeg" alt="" srcset="">
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
+    `;
     STRUCTURE_HM = `
     <div class="project__close">X</div>
-    <a class="project__header" href="https://github.com/Alfrew/headspaceMemory" target="blank">${langData["memory__title"]}</a>
+    <div class="project__header">
+      <a class="project__header-title" href="https://github.com/Alfrew/headspaceMemory" target="blank">${langData["memory__title"]}</a><br />
+      <a class="project__header-subtitle" href="https://alfrew.github.io/headspaceMemory/" target="blank">${langData["live-demo"]}</a>
+    </div>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -224,7 +326,10 @@ let structureInterval = setInterval(() => {
     `;
     STRUCTURE_MA = `
     <div class="project__close">X</div>
-    <a class="project__header" href="https://github.com/Alfrew/movieApp" target="blank">${langData["movie__title"]}</a>
+    <div class="project__header">
+      <a class="project__header-title" href="https://github.com/Alfrew/movieApp" target="blank">${langData["movie__title"]}</a><br />
+      <a class="project__header-subtitle" href="https://alfrew.github.io/movieApp/" target="blank">${langData["live-demo"]}</a>
+    </div>
     <div class="project__btn js-side-btn--left d-none"></div>
     <div class="project__btn js-side-btn--right"></div>
     <div class="project__content js-side-scroll">
@@ -286,7 +391,7 @@ let structureInterval = setInterval(() => {
     
     </div>
     `;
-    PROJECTS_STRUCTURE_LIST = [STRUCTURE_C2MTL, STRUCTURE_MA, STRUCTURE_FSC, STRUCTURE_HM];
+    PROJECTS_STRUCTURE_LIST = [STRUCTURE_GSA, STRUCTURE_C2MTL, STRUCTURE_MA, STRUCTURE_FSC, STRUCTURE_HM];
     clearInterval(structureInterval);
   }
 }, 500);
